@@ -2,83 +2,102 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TEAMWORK Safety Solutions</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Teamwork Safety Solutions Nagpur</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial}
-body{background:#f5f7fa;color:#222}
-header{background:#fff;padding:12px 20px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 8px rgba(0,0,0,.08);position:sticky;top:0;z-index:100}
-.logo-area{display:flex;align-items:center;gap:12px}
-.logo-area img{height:55px}
-.hero{background:linear-gradient(rgba(11,61,145,.85),rgba(11,61,145,.75)),url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200');background-size:cover;background-position:center;color:#fff;text-align:center;padding:70px 20px}
-.hero h2{font-size:36px}
-.hero .cta{margin-top:25px;display:inline-block;background:#ff6f00;color:#fff;padding:14px 32px;border-radius:30px;text-decoration:none;font-weight:bold}
-.section{max-width:1100px;margin:40px auto;padding:0 20px}
-.section h2{color:#0b3d91;font-size:28px;text-align:center;margin-bottom:8px}
-.subtitle{text-align:center;color:#666;margin-bottom:30px}
-.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
-.card{background:#fff;border-radius:12px;padding:22px;box-shadow:0 4px 12px rgba(0,0,0,.07);border-top:4px solid #0b3d91}
-.brochure-box{background:#fff;border-radius:16px;padding:25px;box-shadow:0 8px 30px rgba(0,0,0,.1);border:2px solid #e3f2fd}
-.brochure-box img{width:100%;border-radius:10px;border:1px solid #ddd}
-.btn{padding:12px 24px;border-radius:25px;text-decoration:none;font-weight:700;font-size:14px}
-.btn-orange{background:#ff6f00;color:#fff}
-.btn-green{background:#25D366;color:#fff}
-.btn-blue{background:#0b3d91;color:#fff}
-.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px}
-.product{background:#fff;border-radius:10px;padding:15px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.06)}
-.contact{background:#0a1931;color:#fff;padding:40px 20px;text-align:center;border-radius:16px;margin-top:40px}
-.contact a{color:#4fc3f7;text-decoration:none}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,Arial}
+body{background:#f1f5f9;color:#1e293b}
+header{background:#fff;display:flex;justify-content:space-between;align-items:center;padding:12px 16px;box-shadow:0 2px 15px rgba(0,0,0,.08);position:sticky;top:0;z-index:99}
+.logo{display:flex;align-items:center;gap:10px;font-weight:900;font-size:20px;color:#0f2a52}
+.logo span{color:#ff7a00}
+.logo img{height:48px;width:48px;object-fit:contain}
+.btn{background:#ff7a00;color:#fff;padding:11px 20px;border-radius:30px;text-decoration:none;font-weight:800;font-size:14px}
+.btn-blue{background:#0f2a52}
+.btn-green{background:#16a34a}
+.hero{background:radial-gradient(1200px 600px at 20% 10%,#1e4a8a 0%,#0f2a52 60%);color:#fff;padding:36px 16px 28px}
+.hero h1{font-size:34px;line-height:1.05}
+.hero h1 b{color:#ff7a00}
+.tag{color:#ffcc66;font-weight:800;font-size:11px;letter-spacing:1.2px;margin-bottom:10px}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.bdg{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);padding:8px 12px;border-radius:10px;font-size:11px;font-weight:700}
+.sec{max-width:1120px;margin:auto;padding:22px 14px}
+.card{background:#fff;border-radius:16px;padding:18px;box-shadow:0 8px 25px rgba(15,42,82,.06);margin-bottom:16px;border:1px solid #e2e8f0}
+.blue{display:inline-flex;background:#0f2a52;color:#fff;padding:7px 16px;border-radius:30px;font-weight:800;font-size:12px;margin-bottom:12px}
+.blue.orange{background:#ff7a00}
+.blue.green{background:#16a34a}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.indus{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:10px;margin-top:12px}
+.indus div{background:#eff6ff;border:1px solid #dbeafe;padding:12px 8px;border-radius:12px;text-align:center;font-weight:800;font-size:12px;color:#0f2a52}
+.ppe{display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:10px;margin-top:12px}
+.ppe div{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:14px 6px;text-align:center;font-weight:800;font-size:11px}
+.svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;margin-top:12px}
+.svc div{background:#fff;border-left:4px solid #ff7a00;padding:14px;border-radius:10px;font-weight:700;font-size:13px}
+.brochure-card{background:linear-gradient(135deg,#fff 0%,#fffbeb 100%);border:2px solid #ff7a00;border-radius:20px;padding:20px;box-shadow:0 12px 35px rgba(255,122,0,.18)}
+.brochure-card img{width:100%;border-radius:12px;box-shadow:0 8px 25px rgba(0,0,0,.12);border:1px solid #e2e8f0}
+.actions{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:16px}
+.owner{background:linear-gradient(135deg,#0f2a52 0%,#1e3a6e 100%);color:#fff;border-radius:18px;padding:20px}
+.contact{background:linear-gradient(135deg,#0f2a52,#162f5a);color:#fff;border-radius:20px;padding:26px;margin-top:22px;text-align:center}
+.contact a{color:#ffcc66;text-decoration:none;font-weight:800}
+footer{background:#081a36;color:#94a3b8;text-align:center;padding:16px;font-size:11px}
 </style>
 </head>
 <body>
 <header>
-<div class="logo-area">
-<img src="logo.png" alt="Teamwork Logo">
-<div><h1>TEAMWORK</h1><span style="font-size:12px;color:#ff6f00;font-weight:600">SAFETY SOLUTIONS</span></div>
-</div>
+<div class="logo"><img src="logo.png" alt="Logo">TEAMWORK <span>SAFETY</span></div>
+<a class="btn" href="https://wa.me/918208119059">📞 82081 19059</a>
 </header>
 <div class="hero">
-<h2>Your Partner in Workplace Safety</h2>
-<p>Training • PPE Supply • Safety Compliance</p>
-<a class="cta" href="https://wa.me/918208119059">Get Quote on WhatsApp</a>
+<p class="tag">Training • PPE Supply • Safety Compliance • Nagpur</p>
+<h1>Your Partner in<br>WORKPLACE <b>SAFETY</b></h1>
+<p style="margin-top:10px;font-weight:700">Safety First, <span style="color:#ffcc66">Quality Always</span></p>
+<p style="font-size:13px;opacity:.85;margin-top:6px">High-quality safety services for Manufacturing, Construction, Warehouses & Projects</p>
+<div class="badges">
+<div class="bdg">🛡 Prevent Accidents</div><div class="bdg">👷 Protect People</div><div class="bdg">📋 Ensure Compliance</div><div class="bdg">🤝 Build Safety Culture</div>
 </div>
-<div class="section">
-<h2>Our Services</h2><p class="subtitle">Complete Safety Solutions</p>
-<div class="grid3">
-<div class="card"><h3>🎓 Industrial Safety Training</h3><p>Expert training to prevent accidents.</p></div>
-<div class="card"><h3>🔥 Fire Fighting Training</h3><p>Emergency response & mock drills.</p></div>
-<div class="card"><h3>📋 Safety Compliance</h3><p>Audits, documentation & compliance.</p></div>
-</div>
-</div>
-<div class="section" id="products">
-<h2>PPE Products</h2><p class="subtitle">High Quality PPE from Trusted Brands</p>
-<div class="products">
-<div class="product">⛑️<span>Safety Helmets</span></div>
-<div class="product">👞<span>Safety Shoes</span></div>
-<div class="product">🧤<span>Hand Gloves</span></div>
-<div class="product">🦺<span>Jackets</span></div>
-<div class="product">🥽<span>Goggles</span></div>
-<div class="product">🛡️<span>Face Shields</span></div>
+<div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap">
+<a class="btn" href="https://wa.me/918208119059">Get Quote on WhatsApp →</a>
+<a class="btn btn-blue" href="#brochure">View Brochure</a>
 </div>
 </div>
-<div class="section" id="brochure">
-<h2>📋 Our Company Brochure</h2><p class="subtitle">Download Full HD Brochure</p>
-<div class="brochure-box">
-<img src="brochure.png" alt="Brochure">
-<div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:18px">
-<a href="brochure.png" download class="btn btn-orange">⬇️ Download Brochure</a>
-<a href="https://wa.me/918208119059" class="btn btn-green">💬 WhatsApp</a>
-<a href="tel:+918208119059" class="btn btn-blue">📞 Call</a>
+<div class="sec">
+<div class="grid">
+<div class="card">
+<div class="blue">ABOUT TEAMWORK SAFETY SOLUTIONS</div>
+<p style="font-size:13.5px">We deliver high-quality industrial safety services, training programs and PPE solutions that help organizations create safer workplaces, reduce risks and achieve complete regulatory compliance.</p>
+<br>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+<div style="border-left:4px solid #ff7a00;padding-left:12px;background:#fffbeb;border-radius:0 10px 10px 0;padding:8px"><b style="color:#ff7a00">🎯 Mission</b><br><span style="font-size:12px">Promote proactive safety culture & prevent accidents</span></div>
+<div style="border-left:4px solid #0f2a52;padding-left:12px;background:#eff6ff;border-radius:0 10px 10px 0;padding:8px"><b>👁 Vision</b><br><span style="font-size:12px">Trusted safety partner for every industry</span></div>
+</div>
+<br>
+<div class="blue orange">INDUSTRIES WE SERVE</div>
+<div class="indus">
+<div>🏭<br>Manufacturing</div><div>🏗<br>Construction</div><div>📦<br>Warehouses</div><div>🚚<br>Logistics</div><div>⚙<br>Engineering</div><div>🔧<br>Fabrication</div><div>🏢<br>Infrastructure</div><div>🏭<br>Steel</div>
+</div>
+</div>
+<div class="owner">
+<div class="blue orange">ABOUT OWNER</div>
+<h3>Mr. Rozar Waghchoure</h3>
+<p style="color:#ffad33;font-weight:700;font-size:12px">Proprietor | 13+ Years Merchant Navy | Ex-Safety Officer</p>
+<p style="font-size:12.5px;margin-top:10px;opacity:.9">13 years Merchant Navy experience - real sea-tested safety expertise. Founded Teamwork Safety Solutions for genuine, certified & affordable solutions in Nagpur.</p>
+<br>
+<div class="blue" style="background:#fff;color:#0f2a52">WHY CHOOSE US?</div>
+<div style="font-size:13px;line-height:2">
+✅ Experienced Leadership<br>✅ High Quality PPE<br>✅ Practical Knowledge<br>✅ Reliable Support<br>✅ Customized Solutions<br>✅ Complete Compliance<br>✅ Competitive Pricing<br>✅ Timely Delivery
 </div>
 </div>
 </div>
-<div class="section">
-<div class="contact">
-<h2 style="color:#ffcc80">Contact Us</h2>
-<p><b>Rozar Waghchoure - Proprietor</b><br>41, Jamil Housing Society, Nagpur - 440023</p>
-<p>📱 82081 19059 | 📧 rozer619@gmail.com</p>
-<p style="margin-top:15px;color:#ffcc80">Safety First, Quality Always!</p>
+<div style="margin-top:10px">
+<div class="blue">OUR SERVICES</div>
+<div class="svc">
+<div>📚 Industrial Safety Training</div><div>🔥 Fire Fighting Training</div><div>🚨 Emergency Response</div><div>🧯 Mock Drills</div><div>🗣 Toolbox Talks</div><div>📋 Safety Audits</div><div>📄 Documentation</div><div>⚠ Risk Assessment</div><div>👷 Contractor Safety</div>
 </div>
 </div>
-</body>
-</html>
+<div style="margin-top:22px">
+<div class="blue green">PPE PRODUCTS - Bulk Supply</div>
+<div class="ppe">
+<div>⛑<br>Helmets</div><div>👞<br>Shoes</div><div>🧤<br>Gloves</div><div>🦺<br>Jackets</div><div>🥽<br>Goggles</div><div>🛡<br>Face Shield</div><div>🎧<br>Ear Protection</div><div>🔗<br>Harness</div><div>😷<br>Respiratory</div>
+</div>
+</div>
+<div id="brochure" style="margin-top:28px">
+<div class="blue
