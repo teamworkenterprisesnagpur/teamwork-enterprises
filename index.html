@@ -1,44 +1,186 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Teamwork Safety Solutions Nagpur</title>
+<title>Teamwork Safety Solutions Nagpur - PPE & Training</title>
 <style>
-body{margin:0;font-family:Arial;background:#f8fafc;text-align:center;padding:20px}
-.header{background:#0f2a52;color:#fff;padding:20px;border-radius:15px}
-.header b{color:#ff7a00}
-.card{background:#fff;padding:20px;border-radius:15px;margin:15px 0;box-shadow:0 4px 15px rgba(0,0,0,.1)}
-.btn{background:#ff7a00;color:#fff;padding:12px 24px;border-radius:30px;text-decoration:none;display:inline-block;font-weight:800;margin:8px}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,Arial}
+body{background:#f8fafc;color:#1e293b}
+header{background:#fff;display:flex;justify-content:space-between;align-items:center;padding:10px 14px;box-shadow:0 2px 12px rgba(0,0,0,.08);position:sticky;top:0;z-index:9}
+.logo{display:flex;align-items:center;gap:8px;font-weight:900;color:#0f2a52}
+.logo img{height:42px}
+.logo span{color:#ff7a00}
+.btn{background:#ff7a00;color:#fff;padding:10px 18px;border-radius:25px;text-decoration:none;font-weight:800;font-size:13px;border:none;cursor:pointer}
+.btn-blue{background:#0f2a52}
+.btn-green{background:#16a34a}
+.hero{background:linear-gradient(105deg,#0f2a52 60%,#1e4a8a);color:#fff;padding:28px 14px}
+.hero h1{font-size:30px;line-height:1.1}
+.hero h1 b{color:#ff7a00}
+.tag{color:#ffcc66;font-weight:700;font-size:11px;margin-bottom:6px}
+.sec{max-width:1100px;margin:auto;padding:16px 12px}
+.card{background:#fff;border-radius:16px;padding:16px;box-shadow:0 4px 18px rgba(0,0,0,.06);margin-bottom:14px;border:1px solid #e2e8f0}
+.blue{display:inline-block;background:#0f2a52;color:#fff;padding:6px 14px;border-radius:20px;font-weight:800;font-size:12px;margin-bottom:10px}
+.blue.o{background:#ff7a00}
+.blue.g{background:#16a34a}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.owner{background:linear-gradient(135deg,#0f2a52,#1e3a6e);color:#fff;border-radius:18px;padding:18px;display:grid;grid-template-columns:100px 1fr;gap:14px}
+.owner-pic{width:100px;height:100px;border-radius:14px;background:#fff;overflow:hidden;border:3px solid #ff7a00}
+.owner-pic img{width:100%;height:100%;object-fit:cover}
+.indus{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:10px}
+.indus div{background:#f1f5f9;border:1px solid #e2e8f0;padding:8px 4px;border-radius:10px;text-align:center;font-weight:700;font-size:10px;color:#0f2a52}
+.svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px;margin-top:10px}
+.svc div{background:#fff;border-left:4px solid #ff7a00;padding:12px;border-radius:8px;font-weight:700;font-size:12px}
+.ppe{display:grid;grid-template-columns:repeat(auto-fit,minmax(95px,1fr));gap:8px;margin-top:10px}
+.ppe div{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:10px 4px;text-align:center;font-weight:700;font-size:10px}
+.quote{background:linear-gradient(135deg,#fff,#fff7ed);border:2px solid #ff7a00;border-radius:18px;padding:18px;margin-top:18px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.input{margin-bottom:10px}
+.input label{font-size:11px;font-weight:800;color:#0f2a52;display:block;margin-bottom:3px}
+.input input,.input textarea{width:100%;padding:11px;border:1.5px solid #e2e8f0;border-radius:10px;font-size:12px}
+.check-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.check{display:flex;align-items:center;gap:6px;background:#fff;padding:8px 10px;border-radius:8px;border:1px solid #e2e8f0;font-size:11px;font-weight:700}
+.contact{background:linear-gradient(135deg,#0f2a52,#162f5a);color:#fff;border-radius:18px;padding:20px;margin-top:18px}
+.contact a{color:#ffcc66;text-decoration:none;font-weight:800}
+footer{background:#081a36;color:#94a3b8;text-align:center;padding:14px;font-size:10px}
+@media(max-width:600px){.grid,.form-grid{grid-template-columns:1fr}.indus{grid-template-columns:repeat(2,1fr)}.owner{grid-template-columns:1fr;text-align:center}.owner-pic{margin:auto}}
 </style>
 </head>
 <body>
-<div class="header">
-<h1>TEAMWORK <b>SAFETY</b> SOLUTIONS</h1>
-<p>Safety First, Quality Always - Nagpur</p>
+<header>
+<div class="logo"><img src="logo.png" onerror="this.style.display='none'">TEAMWORK <span>SAFETY</span></div>
+<a class="btn" href="https://wa.me/918208119059">82081 19059</a>
+</header>
+
+<div class="hero">
+<p class="tag">TRAINING • PPE SUPPLY • SAFETY COMPLIANCE • NAGPUR</p>
+<h1>Your Partner in<br>WORKPLACE <b>SAFETY</b></h1>
+<p style="margin-top:8px;font-weight:700">Safety First, <span style="color:#ffcc66">Quality Always</span></p>
+<p style="opacity:.9;font-size:12px;margin-top:4px">Complete safety solutions for Industries & Projects in Nagpur</p>
+<div style="margin-top:14px;display:flex;gap:8px;flex-wrap:wrap">
+<a class="btn" href="#quote">📋 Get Quotation</a>
+<a class="btn btn-blue" href="#contact">📍 Office Address</a>
+</div>
 </div>
 
+<div class="sec">
+<div class="grid">
 <div class="card">
-<h2>✅ WEBSITE IS LIVE!</h2>
-<p><b>Rozar Waghchoure - Proprietor</b><br>13+ Years Merchant Navy | Ex-Safety Officer</p>
-<p>📍 41, Jamil Housing Society, Near Arti Town, Godhani Road, Nagpur - 440023</p>
-<p>📱 82081 19059 | ✉️ rozer619@gmail.com</p>
-<a class="btn" href="https://wa.me/918208119059">WhatsApp Us</a>
-<a class="btn" style="background:#0f2a52" href="tel:8208119059">Call Now</a>
+<div class="blue">ABOUT TEAMWORK SAFETY</div>
+<p style="font-size:12px;line-height:1.6">We deliver high-quality industrial safety services, training programs and PPE solutions that help organizations create safer workplaces, reduce risks and achieve complete compliance across Nagpur & Vidarbha.</p>
+<br>
+<div class="blue o">INDUSTRIES WE SERVE</div>
+<div class="indus">
+<div>🏭<br>Manufacturing</div><div>🏗<br>Construction</div><div>📦<br>Warehouses</div><div>🚚<br>Logistics</div>
+<div>⚙<br>Engineering</div><div>🔧<br>Fabrication</div><div>🏢<br>Infrastructure</div><div>🏭<br>Steel</div>
+</div>
 </div>
 
-<div class="card">
-<img src="logo.png" style="height:80px" onerror="this.style.display='none'">
-<img src="owner.jpg" style="height:120px;border-radius:15px;border:3px solid #ff7a00;margin:10px" onerror="this.style.display='none'">
-<p><b>Owner Photo & Logo</b> - If you see this, images are working!</p>
+<div class="owner">
+<div class="owner-pic"><img src="owner.jpg" onerror="this.style.display='none'"></div>
+<div>
+<div class="blue o">ABOUT OWNER</div>
+<h3>Mr. Rozar Waghchoure</h3>
+<p style="color:#ffad33;font-weight:700;font-size:11px">Proprietor | 13+ Years Merchant Navy | Ex-Safety Officer</p>
+<p style="font-size:11px;margin-top:8px;opacity:.9">13+ years Merchant Navy experience - real sea-tested safety expertise, discipline & global standards. Founded Teamwork Safety Solutions for genuine & affordable safety solutions in Nagpur.</p>
+<div style="margin-top:10px;font-size:11px;line-height:1.8">
+✅ Experienced Leadership<br>✅ High Quality PPE<br>✅ Bulk Pricing & Timely Delivery
+</div>
+</div>
+</div>
 </div>
 
-<div class="card">
-<img src="brochure.png" style="width:100%;max-width:400px;border-radius:12px" onerror="this.style.display='none'">
-<br><br>
-<a class="btn" href="brochure.png" download>⬇️ Download Brochure</a>
+<div style="margin-top:14px">
+<div class="blue">OUR SERVICES</div>
+<div class="svc">
+<div>📚 Industrial Safety Training</div><div>🔥 Fire Fighting Training</div><div>🚨 Emergency Response Planning</div>
+<div>🧯 Mock Drills & Evacuation</div><div>🗣 Toolbox Talk Sessions</div><div>📋 Safety Audits & Inspections</div>
+<div>📄 Safety Documentation</div><div>⚠ Risk Assessment</div><div>👷 Contractor Safety Management</div>
+</div>
 </div>
 
-<p>© 2024-25 Teamwork Safety Solutions Nagpur</p>
+<div style="margin-top:14px">
+<div class="blue g">PPE PRODUCTS - Bulk Supply Available</div>
+<div class="ppe">
+<div>⛑<br>Helmets<br>ISI</div><div>👞<br>Shoes<br>Steel Toe</div><div>🧤<br>Gloves<br>All Types</div>
+<div>🦺<br>Jackets<br>With Logo</div><div>🥽<br>Goggles<br>Anti-Fog</div><div>🛡<br>Face Shield</div>
+<div>🎧<br>Ear Protection</div><div>🔗<br>Harness<br>ISI</div><div>😷<br>Respiratory<br>N95</div>
+</div>
+</div>
+
+<div id="quote" class="quote">
+<h3 style="text-align:center;color:#0f2a52">📋 Get Free Quotation - Reply in 1 Hour!</h3>
+<p style="text-align:center;font-size:11px;color:#64748b;margin:6px 0 12px">Fill form, we send best bulk price on WhatsApp</p>
+<form onsubmit="sendQuote(event)">
+<div class="form-grid">
+<div class="input"><label>Company Name *</label><input id="company" placeholder="ABC Manufacturing" required></div>
+<div class="input"><label>Your Name *</label><input id="person" placeholder="Rajesh Kumar" required></div>
+<div class="input"><label>Mobile *</label><input id="mobile" placeholder="9876543210" required></div>
+<div class="input"><label>Quantity *</label><input id="qty" placeholder="Ex: 50 Helmets" required></div>
+</div>
+<div class="input"><label>Select Products *</label>
+<div class="check-grid">
+<label class="check"><input type="checkbox" value="Helmets" class="prod"> ⛑ Helmets</label>
+<label class="check"><input type="checkbox" value="Shoes" class="prod"> 👞 Shoes</label>
+<label class="check"><input type="checkbox" value="Gloves" class="prod"> 🧤 Gloves</label>
+<label class="check"><input type="checkbox" value="Jackets" class="prod"> 🦺 Jackets</label>
+<label class="check"><input type="checkbox" value="Goggles" class="prod"> 🥽 Goggles</label>
+<label class="check"><input type="checkbox" value="Harness" class="prod"> 🔗 Harness</label>
+</div>
+</div>
+<div class="input"><label>Message</label><textarea id="msg" rows="2" placeholder="Need urgent delivery..."></textarea></div>
+<div style="text-align:center"><button class="btn" style="width:100%;max-width:300px;justify-content:center;padding:12px">📱 Send Request on WhatsApp</button></div>
+</form>
+</div>
+
+<div class="card" style="border:2px solid #ff7a00;margin-top:18px">
+<div class="blue o">📋 OUR BROCHURE</div>
+<img src="brochure.png" style="width:100%;border-radius:12px">
+<div style="display:flex;gap:8px;justify-content:center;margin-top:12px;flex-wrap:wrap">
+<a href="brochure.png" download class="btn">⬇️ Download</a>
+<a href="https://wa.me/918208119059" class="btn btn-green">💬 WhatsApp</a>
+<a href="tel:8208119059" class="btn btn-blue">📞 Call</a>
+</div>
+</div>
+
+<div id="contact" class="contact">
+<h2 style="color:#ff9e44;font-size:18px">📍 CONTACT US - Visit Our Office</h2>
+<div style="margin-top:12px;font-size:12px;line-height:1.7;text-align:left">
+<b>👤 Rozar Waghchoure - Proprietor</b><br>
+TEAMWORK Safety Solutions<br><br>
+<b>📍 Office Address:</b><br>
+41, Jamil Housing Society,<br>
+Near Arti Town, Godhani Railway Road,<br>
+Godhani Road, Nagpur - 440023<br>
+Maharashtra, India<br>
+<span style="font-size:11px;opacity:.8">Landmark: Near Arti Town, Godhani Rly Crossing</span><br><br>
+<b>📱 Mobile / WhatsApp:</b> <a href="https://wa.me/918208119059">82081 19059</a><br>
+<b>✉️ Email:</b> <a href="mailto:rozer619@gmail.com">rozer619@gmail.com</a><br>
+<b>🕒 Timing:</b> 9 AM to 8 PM, Mon-Sat
+</div>
+<div style="margin-top:14px;display:flex;gap:8px;flex-wrap:wrap;justify-content:center">
+<a class="btn" href="https://wa.me/918208119059?text=Hello%20Teamwork%2C%20I%20want%20to%20visit%20office">💬 WhatsApp</a>
+<a class="btn btn-blue" style="background:#fff;color:#0f2a52" href="https://maps.google.com/?q=41+Jamil+Housing+Society+Godhani+Road+Nagpur+440023" target="_blank">📍 Get Directions</a>
+</div>
+</div>
+</div>
+
+<footer>© 2024-25 Teamwork Safety Solutions, Nagpur<br>Office: 41, Jamil Housing, Godhani Road, Nagpur - 440023 | 82081 19059</footer>
+
+<script>
+function sendQuote(e){
+ e.preventDefault();
+ const c=document.getElementById('company').value;
+ const p=document.getElementById('person').value;
+ const m=document.getElementById('mobile').value;
+ const q=document.getElementById('qty').value;
+ const ms=document.getElementById('msg').value;
+ const prods=[...document.querySelectorAll('.prod:checked')].map(x=>x.value).join(', ');
+ if(!prods){alert('Please select product');return;}
+ let t=`*NEW QUOTATION REQUEST*%0ACompany: ${c}%0APerson: ${p}%0AMobile: ${m}%0AProducts: ${prods}%0AQty: ${q}%0A${ms}`;
+ window.open(`https://wa.me/918208119059?text=${t}`,'_blank');
+ alert('✅ Request sent! We reply in 1 hour'); e.target.reset();
+}
+</script>
 </body>
 </html>
