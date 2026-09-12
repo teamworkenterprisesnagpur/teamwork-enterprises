@@ -1,68 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TEAM WORK GROUP | Teamwork Safety Solutions Nagpur | Rozar Waghchoure</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TEAM WORK GROUP Nagpur - Safety, Security, Events | Rozar Waghchoure</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-body{background:#f4f7fb}
-.top{background:#0a1931;color:#ffcc00;text-align:center;padding:7px;font-size:13px;font-weight:700}
-header{background:#fff;padding:10px 20px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 4px 20px rgba(0,0,0,.08);position:sticky;top:0;z-index:99}
-.logo{display:flex;align-items:center;gap:12px}
-.logo img{height:55px}
-.logo b{line-height:1;font-size:22px;color:#000;display:block} 
-.logo span{font-size:12px;color:#555;font-weight:600}
-nav a{margin-left:8px;text-decoration:none;background:#0a1931;color:#fff;padding:8px 14px;border-radius:20px;font-size:12px;font-weight:700}
-.hero{background:linear-gradient(rgba(10,25,49,.92),rgba(10,25,49,.75)),url('https://images.unsplash.com/photo-1504307651254-35680f356dfd');background-size:cover;color:#fff;padding:70px 20px;text-align:center}
-.hero h1{font-size:42px;line-height:1.1} .hero h1 span{color:#ffcc00}
-.hero p{margin:18px auto;max-width:700px;opacity:.9}
-.btn{display:inline-block;padding:14px 32px;border-radius:50px;text-decoration:none;font-weight:800;margin:8px}
-.btn-w{background:#25D366;color:#fff} .btn-y{background:#ffcc00;color:#000}
-.box{margin:30px 15px;background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 12px 30px rgba(0,0,0,.1)}
-.head{padding:22px 28px;color:#fff;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
-.body{padding:25px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
-.card{border:1px solid #eef2f7;background:#f9fbff;padding:14px;border-radius:12px;font-size:14px}
-.owner{display:flex;gap:25px;flex-wrap:wrap;align-items:center;background:#fff;margin:30px 15px;padding:30px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.1);border-left:8px solid #ffcc00}
-.owner img{width:200px;height:250px;object-fit:cover;border-radius:15px;box-shadow:0 8px 20px rgba(0,0,0,.2)}
-.footer{background:#0a1931;color:#fff;padding:35px 20px;text-align:center}
-#s1 .head{background:#1a3a6e}
-#s2 .head{background:linear-gradient(90deg,#ff8a00,#ffcc00);color:#000}
-#s3 .head{background:linear-gradient(90deg,#11998e,#38ef7d)}
-#s4 .head{background:linear-gradient(90deg,#cb2d3e,#ef473a)}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,Arial}
+body{background:#f8fafc;color:#1e293b}
+header{background:#fff;display:flex;justify-content:space-between;align-items:center;padding:10px 14px;box-shadow:0 2px 12px rgba(0,0,0,.08);position:sticky;top:0;z-index:99}
+.logo{display:flex;align-items:center;gap:8px;font-weight:900;color:#0f2a52;font-size:16px}
+.logo img{height:45px;border-radius:8px}
+.logo span{color:#ff7a00}
+.top{background:#0f2a52;color:#ffcc00;text-align:center;padding:6px;font-size:11px;font-weight:700;letter-spacing:.5px}
+.btn{background:#ff7a00;color:#fff;padding:10px 18px;border-radius:25px;text-decoration:none;font-weight:800;font-size:13px;border:none;cursor:pointer;display:inline-block}
+.btn-blue{background:#0f2a52} .btn-green{background:#16a34a} .btn-y{background:#ffcc00;color:#000}
+.hero{background:linear-gradient(105deg,#0f2a52 60%,#1e4a8a);color:#fff;padding:32px 14px;text-align:center}
+.hero h1{font-size:32px;line-height:1.1} .hero h1 b{color:#ffcc00}
+.tag{color:#ffcc66;font-weight:700;font-size:11px;margin-bottom:8px;letter-spacing:1px}
+.sec{max-width:1100px;margin:auto;padding:16px 12px}
+.card{background:#fff;border-radius:16px;padding:16px;box-shadow:0 4px 18px rgba(0,0,0,.06);margin-bottom:14px;border:1px solid #e2e8f0}
+.blue{display:inline-block;background:#0f2a52;color:#fff;padding:6px 14px;border-radius:20px;font-weight:800;font-size:12px;margin-bottom:10px}
+.blue.o{background:#ff7a00} .blue.g{background:#16a34a}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.owner{background:linear-gradient(135deg,#0f2a52,#1e3a6e);color:#fff;border-radius:18px;padding:18px;display:grid;grid-template-columns:110px 1fr;gap:16px;align-items:center}
+.owner-pic{width:110px;height:130px;border-radius:14px;background:#fff;overflow:hidden;border:3px solid #ffcc00}
+.owner-pic img{width:100%;height:100%;object-fit:cover}
+.svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px;margin-top:10px}
+.svc div{background:#fff;border-left:4px solid #ff7a00;padding:12px;border-radius:8px;font-weight:700;font-size:12px}
+.ppe{display:grid;grid-template-columns:repeat(auto-fit,minmax(95px,1fr));gap:8px;margin-top:10px}
+.ppe div{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:10px 4px;text-align:center;font-weight:700;font-size:10px}
+.quote{background:linear-gradient(135deg,#fff,#fff7ed);border:2px solid #ff7a00;border-radius:18px;padding:18px;margin-top:18px}
+.input{margin-bottom:10px} .input label{font-size:11px;font-weight:800;color:#0f2a52;display:block;margin-bottom:3px}
+.input input,.input textarea{width:100%;padding:11px;border:1.5px solid #e2e8f0;border-radius:10px;font-size:12px}
+.check-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.check{display:flex;align-items:center;gap:6px;background:#fff;padding:8px 10px;border-radius:8px;border:1px solid #e2e8f0;font-size:11px;font-weight:700}
+.contact{background:linear-gradient(135deg,#0f2a52,#162f5a);color:#fff;border-radius:18px;padding:20px;margin-top:18px}
+.contact a{color:#ffcc66;text-decoration:none;font-weight:800}
+footer{background:#081a36;color:#94a3b8;text-align:center;padding:14px;font-size:10px}
+@media(max-width:600px){.grid{grid-template-columns:1fr}.owner{grid-template-columns:1fr;text-align:center}.owner-pic{margin:auto}}
 </style>
 </head>
 <body>
 <div class="top">TEAM WORK GROUP - A Group of Safety, Security & Event Companies | 13+ Years Experience</div>
 <header>
-<div class="logo"><img src="logo.png"><div><b>TEAMWORK GROUP</b><span>SAFETY SOLUTIONS • NAGPUR</span></div></div>
-<nav><a href="#s1">Security</a><a href="#s2">Safety</a><a href="#owner">Owner</a></nav>
+<div class="logo"><img src="logo.png">TEAMWORK <span>GROUP</span></div>
+<div style="display:flex;gap:6px"><a class="btn btn-blue" href="#security">Security</a><a class="btn" href="https://wa.me/918208119059">82081 19059</a></div>
 </header>
 
 <div class="hero">
-<h1>TEAM WORK <span>GROUP</span><br>NAGPUR</h1>
-<p>Your Partner in Workplace Safety, Security & Compliance. Training + PPE Supply + Safety Compliance.</p>
-<p style="font-weight:700;color:#ffcc00">Rozar Waghchoure | TEAMWORK Safety Solutions | 13+ Years Merchant Navy</p>
-<a class="btn btn-w" href="https://wa.me/918208119059">📲 WhatsApp: 82081 19059</a>
-<a class="btn btn-y" href="#brochure">📄 View Brochure</a>
-</div>
-
-<div class="owner" id="owner">
-<img src="owner.jpg">
-<div style="flex:1;min-width:280px">
-<h2 style="color:#0a1931">About The Founder - Mr. Rozar Waghchoure</h2>
-<p style="color:#ff6a00;font-weight:700;margin:6px 0">Safety Officer & Navigation Officer - Merchant Navy (13+ Years)</p>
-<p style="font-size:14px;line-height:1.8;color:#333;margin-top:12px">
-With over 13 years in the Merchant Navy, Mr. Rozar served as Safety Officer & Navigation Officer - directly in-charge of all Fire Fighting Equipment and Safety & PPE systems onboard where safety is not an option, it's survival.<br><br>
-After ensuring safety of ships and crew at sea, he founded <b>TEAMWORK SAFETY SOLUTIONS</b> under <b>TEAM WORK GROUP</b> to provide genuine, certified and affordable safety solutions to industries in Nagpur.<br><br>
-<b>Address:</b> 41, Jamil Housing Society, Near Arti Town, Godhni Rd, Nagpur - 440023<br>
-<b>Mobile:</b> 82081 19059 | <b>Email:</b> rozer619@gmail.com
-</p>
-<a class="btn btn-w" style="margin-top:12px" href="https://wa.me/918208119059?text=Hi%20Sir%20Rozar">Contact Owner Directly</a>
+<p class="tag">TEAM WORK GROUP • SAFETY • SECURITY • EVENTS • TRAINING • NAGPUR</p>
+<h1>TEAM WORK <b>GROUP</b><br>NAGPUR</h1>
+<p style="margin-top:8px;font-weight:700">Your Partner in Workplace <span style="color:#ffcc66">Safety, Security & Compliance</span></p>
+<p style="opacity:.9;font-size:12px;margin-top:6px">Safety Solutions • Industrial Security • Events • Training - By Rozar Waghchoure (13+ Years Merchant Navy)</p>
+<div style="margin-top:16px;display:flex;gap:8px;flex-wrap:wrap;justify-content:center">
+<a class="btn" href="#quote">📋 Get Quotation</a>
+<a class="btn btn-y" href="#brochure">📄 Brochure</a>
 </div>
 </div>
 
-<div class="box" id="s1"><div class="head"><div><h2>🛡️ 1. INDUSTRIAL SECURITY SERVICES - TEAM WORK GROUP</h2><p>24x7 Security Manpower for Factory, Office, Society & Events</p></div></div><div class="body"><div class="grid"><div class="card"><b>👮 Industrial Security Guard</b><br>Factory, Warehouse, Office</div><div class="card"><b>💪 Bouncer Service</b><br>Event & Personal</div><div class="card"><b>🔫 Gunman Service</b><br>Licensed Armed Guard</div><div class="card"><b>📹 CCTV Installation</b><br>Setup + Monitoring</div><div class="card"><b>🧹 Housekeeping Manpower</b><br>Trained Staff</div></div></div></div>
+<div class="sec">
+<div class="grid">
+<div class="card">
+<div class="blue">ABOUT TEAM WORK GROUP</div>
+<p style="font-size:12px;line-height:1.6">TEAM WORK GROUP is a group of companies providing complete Safety, Security & Event solutions. Under our flagship <b>TEAMWORK SAFETY SOLUTIONS</b>, we deliver high-quality PPE, training & compliance services across Nagpur & Vidarbha.</p>
+<div style="margin-top:12px"><div class="blue o">4 COMPANIES IN ONE GROUP</div>
+<div class="svc"><div>🛡️ Industrial Security</div><div>🦺 Safety Equipment</div><div>🎉 Events & Promotion</div><div>🔥 Safety Training</div></div></div>
+</div>
 
-<div class="box" id="s2"><div class="head"><div><h2>🦺 2. SAFETY EQUIPMENT - TEAMWORK SAFETY SOLUTIONS</h2><p>ISI Mark PPE - Safety Helmets, Shoes, Gloves, Harness - Bulk Supply</p></div></div><div class="body"><div class="grid"><div class="
+<div class="owner">
+<div class="owner-pic"><img src="owner.jpg"></div>
+<div>
+<div class="blue o">ABOUT FOUNDER</div>
+<h3>Mr. Rozar Waghchoure</h3>
+<p style="color:#ffcc66;font-weight:700;font-size:11px">Founder - TEAM WORK GROUP | 13+ Years Merchant Navy</p>
+<p style="font-size:11px;margin-top:8px;opacity:.9">Ex-Safety Officer & Navigation Officer - directly in-charge of Fire Fighting & Safety & PPE systems onboard. Safety is not an option, it's survival.</p>
+<div style="margin-top:10px;font-size:11px">✅ Group Leadership<br>✅ Certified Safety Expert<br>✅ 100+ Clients Nagpur</div>
+</div>
+</div>
+</div>
+
+<div style="margin-top:16px" id="security">
+<div class="blue">OUR CORE SERVICES - TEAM WORK GROUP</div>
+<div class="svc">
+<div>👮 Industrial Security Guard - Factory/Office</div><div>💪 Bouncer Service - Event & Personal</div><div>🔫 Gunman - Licensed Armed</div>
+<div>📹 CCTV Installation & Monitoring</div><div>📚 Industrial Safety Training</div><div>🔥 Fire Fighting Training</div>
+<div>🧯 Mock Drills</div><div>📋 Safety Audits</div>
+</div>
+</div>
+
+<div style="margin-top:16px">
+<div class="blue g">PPE PRODUCTS - TEAMWORK SAFETY SOLUTIONS</div>
+<div class="ppe">
+<div>⛑<br>Helmets<br>₹350</div><div>👞<br>Shoes<br>₹1200</div><div>🧤<br>Gloves</div><div>🦺<br>Jackets</div><div>🥽<br>Goggles</div><div>🛡<br>Face Shield</div><div>🎧<br>Ear Protection</div><div>🔗<br>Harness</div>
+</div>
+</div>
+
+<div id="quote" class="quote">
+<h3 style="text-align:center;color:#0f2a52">📋 Get Free Quotation - Reply in 1 Hour!</h3>
+<p style="text-align:center;font-size:11px;color:#64748b;margin:6px 0 12px">TEAM WORK GROUP will send best bulk price on WhatsApp</p>
+<form onsubmit="sendQuote(event)">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+<div class="input"><label>Company Name *</label><input id="company" placeholder="ABC Manufacturing" required></div>
+<div class="input"><label>Your Name *</label><input id="person" placeholder="Rajesh Kumar" required></div>
+<div class="input"><label>Mobile *</label><input id="mobile" placeholder="9876543210" required></div>
+<div class="input"><label>Quantity *</label><input id="qty" placeholder="Ex: 50 Helmets" required></div>
+</div>
+<div class="input"><label>Service Needed *</label>
+<div class="check-grid">
+<label class="check"><input type="checkbox" value="Security Guard" class="prod"> 🛡️ Security</label>
+<label class="check"><input type="checkbox" value="Safety Equipment" class="prod"> 🦺 Safety PPE</label>
+<label class="check"><input type="checkbox" value="Events" class="prod"> 🎉 Events</label>
+<label class="check"><input type="checkbox" value="Training" class="prod"> 🔥 Training</label>
+</div>
+</div>
+<div class="input"><label>Message</label><textarea id="msg" rows="2" placeholder="Need urgent delivery..."></textarea></div>
+<div style="text-align:center"><button class="btn" style="width:100%;max-width:340px;padding:13px">📱 Send Request to TEAM WORK GROUP</button></div>
+</form>
+</div>
+
+<div class="card" style="border:2px solid #ff7a00;margin-top:18px" id="brochure">
+<div class="blue o">📋 OFFICIAL BROCHURE - TEAMWORK GROUP</div>
+<img src="brochure.jpg" style="width:100%;border-radius:12px;margin-top:10px" onerror="this.src='brochure.png'">
+<div style="display:flex;gap:8px;justify-content:center;margin-top:12px;flex-wrap:wrap">
+<a href="brochure.jpg" download class="btn">⬇️ Download Brochure</a>
+<a href="https://wa.me/918208119059" class="btn btn-green">💬 WhatsApp</a>
+<a href="tel:8208119059" class="btn btn-blue">📞 Call Owner</a>
+</div>
+</div>
+
+<div id="contact" class="contact">
+<h2 style="color:#ff9e44;font-size:18px">📍 CONTACT - TEAM WORK GROUP</h2>
+<div style="margin-top:12px;font-size:12px;line-height:1.7">
+<b>👤 Rozar Waghchoure - Founder, TEAM WORK GROUP</b><br>
+41, Jamil Housing Society, Near Arti Town, Godhani Railway Road, Nagpur - 440023<br><br>
+<b>📱 Mobile / WhatsApp:</b> <a href="https://wa.me/918208119059">82081 19059</a><br>
+<b>✉️ Email:</b> <a href="mailto:rozer619@gmail.com">rozer619@gmail.com</a><br>
+</div>
+<div style="margin-top:14px;display:flex;gap:8px;flex-wrap:wrap;justify-content:center">
+<a class="btn" href="https://wa.me/918208119059">💬 WhatsApp</a>
+<a class="btn" style="background:#fff;color:#0f2a52" href="https://maps.google.com/?q=41+Jamil+Housing+Society+Godhani+Road+Nagpur+440023" target="_blank">📍 Get Directions</a>
+</div>
+</div>
+</div>
+<footer>© 2024-26 TEAM WORK GROUP | TEAMWORK Safety Solutions, Nagpur<br>41, Jamil Housing, Godhani Road - 440023 | 82081 19059 | rozer619@gmail.com</footer>
+<script>
+function sendQuote(e){
+ e.preventDefault();
+ const c=document.getElementById('company').value;
+ const p=document.getElementById('person').value;
+ const m=document.getElementById('mobile').value;
+ const q=document.getElementById('qty').value;
+ const ms=document.getElementById('msg').value;
+ const prods=[...document.querySelectorAll('.prod:checked')].map(x=>x.value).join(', ');
+ if(!prods){alert('Please select service');return;}
+ let t=`*TEAM WORK GROUP - NEW EN
