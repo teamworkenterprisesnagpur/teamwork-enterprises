@@ -1,639 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TEAM WORK GROUP | Industrial Safety & Security Solutions Nagpur</title>
-  <meta name="description" content="Certified Industrial Security, Safety Training, Fire Drills & PPE Equipment Supply in Nagpur & Vidarbha region." />
-  
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <style>
-    :root {
-      --primary: #0a192f;
-      --primary-light: #172a45;
-      --accent: #f59e0b;
-      --accent-hover: #d97706;
-      --text-dark: #0f172a;
-      --text-muted: #475569;
-      --bg-light: #f8fafc;
-      --white: #ffffff;
-      --border: #e2e8f0;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Inter', sans-serif;
-    }
-
-    body {
-      color: var(--text-dark);
-      background-color: var(--white);
-      line-height: 1.6;
-      padding-bottom: 60px; /* Space for mobile bottom bar */
-    }
-
-    /* Container */
-    .container {
-      width: 90%;
-      max-width: 1140px;
-      margin: 0 auto;
-    }
-
-    /* Header & Nav */
-    header {
-      background-color: var(--primary);
-      color: var(--white);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    .nav-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 0;
-    }
-    .brand-logo {
-      font-weight: 800;
-      font-size: 1.3rem;
-      letter-spacing: 0.5px;
-      text-decoration: none;
-      color: var(--white);
-    }
-    .brand-logo span {
-      color: var(--accent);
-    }
-    .nav-links {
-      display: flex;
-      gap: 1.2rem;
-      align-items: center;
-    }
-    .nav-links a {
-      color: #cbd5e1;
-      text-decoration: none;
-      font-size: 0.95rem;
-      font-weight: 500;
-      transition: color 0.2s;
-    }
-    .nav-links a:hover {
-      color: var(--accent);
-    }
-    .nav-btn {
-      background-color: var(--accent);
-      color: var(--primary) !important;
-      padding: 0.5rem 1rem;
-      border-radius: 6px;
-      font-weight: 700 !important;
-    }
-
-    /* Hero Section */
-    .hero {
-      background: linear-gradient(rgba(10, 25, 47, 0.92), rgba(10, 25, 47, 0.92)), url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1600&q=80') center/cover;
-      color: var(--white);
-      padding: 5rem 0;
-      text-align: center;
-    }
-    .badge {
-      display: inline-block;
-      background: rgba(245, 158, 11, 0.15);
-      color: var(--accent);
-      border: 1px solid var(--accent);
-      padding: 0.35rem 0.9rem;
-      border-radius: 50px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      margin-bottom: 1.2rem;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-    .hero h1 {
-      font-size: 2.5rem;
-      line-height: 1.25;
-      font-weight: 800;
-      margin-bottom: 1rem;
-    }
-    .hero h1 span {
-      color: var(--accent);
-    }
-    .hero p {
-      font-size: 1.15rem;
-      color: #cbd5e1;
-      max-width: 720px;
-      margin: 0 auto 2rem auto;
-    }
-    .hero-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-    .btn {
-      display: inline-block;
-      padding: 0.85rem 1.75rem;
-      border-radius: 8px;
-      font-weight: 600;
-      text-decoration: none;
-      transition: all 0.2s ease;
-      cursor: pointer;
-      border: none;
-    }
-    .btn-primary {
-      background-color: var(--accent);
-      color: var(--primary);
-    }
-    .btn-primary:hover {
-      background-color: var(--accent-hover);
-      transform: translateY(-2px);
-    }
-    .btn-outline {
-      border: 2px solid #94a3b8;
-      color: var(--white);
-    }
-    .btn-outline:hover {
-      background: rgba(255,255,255,0.1);
-      border-color: var(--white);
-    }
-
-    /* Section Styles */
-    section {
-      padding: 4.5rem 0;
-    }
-    .section-title {
-      text-align: center;
-      margin-bottom: 3rem;
-    }
-    .section-title h2 {
-      font-size: 2rem;
-      color: var(--primary);
-      font-weight: 800;
-    }
-    .section-title p {
-      color: var(--text-muted);
-      margin-top: 0.5rem;
-    }
-
-    /* Founder & Trust Banner */
-    .founder-box {
-      background: var(--bg-light);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 2.5rem;
-      display: flex;
-      gap: 2.5rem;
-      align-items: center;
-      margin-bottom: 3rem;
-    }
-    .founder-avatar {
-      flex-shrink: 0;
-      width: 140px;
-      height: 140px;
-      background: #cbd5e1;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 3rem;
-      border: 4px solid var(--accent);
-    }
-    .founder-info h3 {
-      font-size: 1.5rem;
-      color: var(--primary);
-      margin-bottom: 0.3rem;
-    }
-    .founder-tag {
-      font-weight: 600;
-      color: var(--accent-hover);
-      font-size: 0.95rem;
-      margin-bottom: 0.8rem;
-    }
-    .points-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-    .points-list span {
-      background: var(--white);
-      padding: 0.4rem 0.8rem;
-      border-radius: 6px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      border: 1px solid var(--border);
-    }
-
-    /* Grid Layouts */
-    .grid-4 {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.5rem;
-    }
-    .card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 1.5rem;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.03);
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.06);
-    }
-    .card-icon {
-      font-size: 2.2rem;
-      margin-bottom: 1rem;
-    }
-    .card h3 {
-      font-size: 1.15rem;
-      color: var(--primary);
-      margin-bottom: 0.5rem;
-    }
-    .card p {
-      color: var(--text-muted);
-      font-size: 0.9rem;
-    }
-
-    /* PPE Standard Tags */
-    .tag-standard {
-      display: inline-block;
-      margin-top: 0.8rem;
-      font-size: 0.75rem;
-      font-weight: 700;
-      background: #e0f2fe;
-      color: #0369a1;
-      padding: 0.2rem 0.6rem;
-      border-radius: 4px;
-    }
-
-    /* Quote Section */
-    .quote-section {
-      background: var(--primary);
-      color: var(--white);
-      border-radius: 16px;
-      padding: 3.5rem 2rem;
-    }
-    .quote-container {
-      max-width: 650px;
-      margin: 0 auto;
-    }
-    .quote-container h2 {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-    .quote-container p {
-      text-align: center;
-      color: #94a3b8;
-      margin-bottom: 2rem;
-    }
-    .form-group {
-      margin-bottom: 1.2rem;
-    }
-    .form-group label {
-      display: block;
-      font-size: 0.9rem;
-      margin-bottom: 0.4rem;
-      font-weight: 500;
-      color: #cbd5e1;
-    }
-    .form-control {
-      width: 100%;
-      padding: 0.8rem 1rem;
-      border-radius: 8px;
-      border: 1px solid #334155;
-      background: #1e293b;
-      color: var(--white);
-      font-size: 0.95rem;
-      outline: none;
-    }
-    .form-control:focus {
-      border-color: var(--accent);
-    }
-    .submit-btn {
-      width: 100%;
-      background: #25d366;
-      color: var(--white);
-      font-size: 1.05rem;
-      padding: 1rem;
-      border-radius: 8px;
-      font-weight: 700;
-      border: none;
-      cursor: pointer;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 0.5rem;
-      transition: background 0.2s;
-    }
-    .submit-btn:hover {
-      background: #1eb956;
-    }
-
-    /* Contact Details Grid */
-    .contact-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-    .contact-card {
-      background: var(--bg-light);
-      padding: 1.5rem;
-      border-radius: 8px;
-      border: 1px solid var(--border);
-    }
-    .contact-card h4 {
-      color: var(--primary);
-      margin-bottom: 0.5rem;
-    }
-
-    /* Sticky Bottom Bar for Mobile */
-    .mobile-bar {
-      display: none;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 55px;
-      background: var(--white);
-      border-top: 1px solid var(--border);
-      z-index: 999;
-      box-shadow: 0 -2px 10px rgba(0,0,0,0.08);
-    }
-    .mobile-bar a {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.4rem;
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 0.95rem;
-    }
-    .btn-mob-call {
-      background: var(--primary);
-      color: var(--white);
-    }
-    .btn-mob-wa {
-      background: #25d366;
-      color: var(--white);
-    }
-
-    footer {
-      background: #060d17;
-      color: #64748b;
-      padding: 2.5rem 0;
-      text-align: center;
-      font-size: 0.85rem;
-    }
-
-    @media (max-width: 768px) {
-      .founder-box {
-        flex-direction: column;
-        text-align: center;
-      }
-      .points-list {
-        justify-content: center;
-      }
-      .hero h1 {
-        font-size: 1.85rem;
-      }
-      .nav-links {
-        display: none;
-      }
-      .mobile-bar {
-        display: flex;
-      }
-    }
-  </style>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TEAM WORK GROUP Nagpur - Safety, Security, Events | Rozar Waghchoure</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,Arial}
+body{background:#f8fafc;color:#1e293b}
+header{background:#fff;display:flex;justify-content:space-between;align-items:center;padding:10px 14px;box-shadow:0 2px 12px rgba(0,0,0,.08);position:sticky;top:0;z-index:99}
+.logo{display:flex;align-items:center;gap:8px;font-weight:900;color:#0f2a52;font-size:16px}
+.logo img{height:45px;border-radius:8px}
+.logo span{color:#ff7a00}
+.top{background:#0f2a52;color:#ffcc00;text-align:center;padding:6px;font-size:11px;font-weight:700;letter-spacing:.5px}
+.btn{background:#ff7a00;color:#fff;padding:10px 18px;border-radius:25px;text-decoration:none;font-weight:800;font-size:13px;border:none;cursor:pointer;display:inline-block}
+.btn-blue{background:#0f2a52} .btn-green{background:#16a34a} .btn-y{background:#ffcc00;color:#000}
+.hero{background:linear-gradient(105deg,#0f2a52 60%,#1e4a8a);color:#fff;padding:32px 14px;text-align:center}
+.hero h1{font-size:32px;line-height:1.1} .hero h1 b{color:#ffcc00}
+.tag{color:#ffcc66;font-weight:700;font-size:11px;margin-bottom:8px;letter-spacing:1px}
+.sec{max-width:1100px;margin:auto;padding:16px 12px}
+.card{background:#fff;border-radius:16px;padding:16px;box-shadow:0 4px 18px rgba(0,0,0,.06);margin-bottom:14px;border:1px solid #e2e8f0}
+.blue{display:inline-block;background:#0f2a52;color:#fff;padding:6px 14px;border-radius:20px;font-weight:800;font-size:12px;margin-bottom:10px}
+.blue.o{background:#ff7a00} .blue.g{background:#16a34a}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.owner{background:linear-gradient(135deg,#0f2a52,#1e3a6e);color:#fff;border-radius:18px;padding:18px;display:grid;grid-template-columns:110px 1fr;gap:16px;align-items:center}
+.owner-pic{width:110px;height:130px;border-radius:14px;background:#fff;overflow:hidden;border:3px solid #ffcc00}
+.owner-pic img{width:100%;height:100%;object-fit:cover}
+.svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px;margin-top:10px}
+.svc div{background:#fff;border-left:4px solid #ff7a00;padding:12px;border-radius:8px;font-weight:700;font-size:12px}
+.ppe{display:grid;grid-template-columns:repeat(auto-fit,minmax(95px,1fr));gap:8px;margin-top:10px}
+.ppe div{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:10px 4px;text-align:center;font-weight:700;font-size:10px}
+.quote{background:linear-gradient(135deg,#fff,#fff7ed);border:2px solid #ff7a00;border-radius:18px;padding:18px;margin-top:18px}
+.input{margin-bottom:10px} .input label{font-size:11px;font-weight:800;color:#0f2a52;display:block;margin-bottom:3px}
+.input input,.input textarea{width:100%;padding:11px;border:1.5px solid #e2e8f0;border-radius:10px;font-size:12px}
+.check-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.check{display:flex;align-items:center;gap:6px;background:#fff;padding:8px 10px;border-radius:8px;border:1px solid #e2e8f0;font-size:11px;font-weight:700}
+.contact{background:linear-gradient(135deg,#0f2a52,#162f5a);color:#fff;border-radius:18px;padding:20px;margin-top:18px}
+.contact a{color:#ffcc66;text-decoration:none;font-weight:800}
+footer{background:#081a36;color:#94a3b8;text-align:center;padding:14px;font-size:10px}
+@media(max-width:600px){.grid{grid-template-columns:1fr}.owner{grid-template-columns:1fr;text-align:center}.owner-pic{margin:auto}}
+</style>
 </head>
 <body>
+<div class="top">TEAM WORK GROUP - A Group of Safety, Security & Event Companies | 13+ Years Experience</div>
+<header>
+<div class="logo"><img src="logo.png">TEAMWORK <span>GROUP</span></div>
+<div style="display:flex;gap:6px"><a class="btn btn-blue" href="#security">Security</a><a class="btn" href="https://wa.me/918208119059">82081 19059</a></div>
+</header>
 
-  <!-- Sticky Header -->
-  <header>
-    <div class="container nav-container">
-      <a href="#" class="brand-logo">TEAM WORK <span>GROUP</span></a>
-      <div class="nav-links">
-        <a href="#services">Services</a>
-        <a href="#ppe">PPE Supply</a>
-        <a href="#about">About</a>
-        <a href="#quote" class="nav-btn">Get Bulk Quote</a>
-      </div>
-    </div>
-  </header>
+<div class="hero">
+<p class="tag">TEAM WORK GROUP • SAFETY • SECURITY • EVENTS • TRAINING • NAGPUR</p>
+<h1>TEAM WORK <b>GROUP</b><br>NAGPUR</h1>
+<p style="margin-top:8px;font-weight:700">Your Partner in Workplace <span style="color:#ffcc66">Safety, Security & Compliance</span></p>
+<p style="opacity:.9;font-size:12px;margin-top:6px">Safety Solutions • Industrial Security • Events • Training - By Rozar Waghchoure (13+ Years Merchant Navy)</p>
+<div style="margin-top:16px;display:flex;gap:8px;flex-wrap:wrap;justify-content:center">
+<a class="btn" href="#quote">📋 Get Quotation</a>
+<a class="btn btn-y" href="#brochure">📄 Brochure</a>
+</div>
+</div>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <div class="badge">Nagpur & Vidarbha Industrial Safety Partner</div>
-      <h1>Workplace Safety & Security<br>Led By <span>Merchant Navy</span> Standards</h1>
-      <p>Supplying ISI-certified PPE equipment, licensed security personnel, and maritime-grade industrial fire & safety drills across Nagpur.</p>
-      <div class="hero-buttons">
-        <a href="#quote" class="btn btn-primary">📋 Request Instant Quote</a>
-        <a href="tel:+918208119059" class="btn btn-outline">📞 Call: 82081 19059</a>
-      </div>
-    </div>
-  </section>
+<div class="sec">
+<div class="grid">
+<div class="card">
+<div class="blue">ABOUT TEAM WORK GROUP</div>
+<p style="font-size:12px;line-height:1.6">TEAM WORK GROUP is a group of companies providing complete Safety, Security & Event solutions. Under our flagship <b>TEAMWORK SAFETY SOLUTIONS</b>, we deliver high-quality PPE, training & compliance services across Nagpur & Vidarbha.</p>
+<div style="margin-top:12px"><div class="blue o">4 COMPANIES IN ONE GROUP</div>
+<div class="svc"><div>🛡️ Industrial Security</div><div>🦺 Safety Equipment</div><div>🎉 Events & Promotion</div><div>🔥 Safety Training</div></div></div>
+</div>
 
-  <!-- Founder Profile / Trust -->
-  <section id="about" style="background-color: var(--white);">
-    <div class="container">
-      <div class="founder-box">
-        <div class="founder-avatar">⚓</div>
-        <div class="founder-info">
-          <h3>Mr. Rozar Waghchoure</h3>
-          <div class="founder-tag">Founder, Team Work Group | Ex-Merchant Navy Navigation & Safety Officer</div>
-          <p>Over 13+ years of rigorous international maritime experience managing onboard fire systems, high-risk safety protocols, and emergency response. We bring zero-compromise safety standards directly to your factory floor and commercial premises.</p>
-          <div class="points-list">
-            <span>🛡️ DG Shipping Certified</span>
-            <span>📍 Nagpur Based Operations</span>
-            <span>⚡ Fast Bulk Quotation</span>
-            <span>🤝 100+ Commercial Sites Supported</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<div class="owner">
+<div class="owner-pic"><img src="owner.jpg"></div>
+<div>
+<div class="blue o">ABOUT FOUNDER</div>
+<h3>Mr. Rozar Waghchoure</h3>
+<p style="color:#ffcc66;font-weight:700;font-size:11px">Founder - TEAM WORK GROUP | 13+ Years Merchant Navy Officer</p>
+<p style="font-size:11px;margin-top:8px;opacity:.9">Ex-Safety Officer & Navigation Officer On Ships - directly in-charge of Fire Fighting & Safety & PPE systems onboard.DG Shipping Certified Trainer.Safety is not an option, it's survival.</p>
+<div style="margin-top:10px;font-size:11px">✅ Group Leadership<br>✅ Certified Safety Expert<br>✅ 100+ Clients Nagpur</div>
+</div>
+</div>
+</div>
 
-  <!-- Core Services -->
-  <section id="services" style="background-color: var(--bg-light);">
-    <div class="container">
-      <div class="section-title">
-        <h2>Industrial Services</h2>
-        <p>Reliable manpower and safety drill executions tailored for industrial sites.</p>
-      </div>
-      <div class="grid-4">
-        <div class="card">
-          <div class="card-icon">👮</div>
-          <h3>Industrial Security</h3>
-          <p>Disciplined, vetted security personnel and supervisors for factories, warehouses, and corporate offices.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🔥</div>
-          <h3>Fire Fighting Drills</h3>
-          <p>Hands-on staff drill training, emergency evacuation simulations, and fire extinguisher handling.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">📹</div>
-          <h3>CCTV & Surveillance</h3>
-          <p>Complete camera setup, perimeter planning, and active remote monitoring systems.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">📋</div>
-          <h3>Safety Audits</h3>
-          <p>Hazard identification, safety compliance reporting, and industrial safety consultancy.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+<div style="margin-top:16px" id="security">
+<div class="blue">OUR CORE SERVICES - TEAM WORK GROUP</div>
+<div class="svc">
+<div>👮 Industrial Security Guard - Factory/Office</div><div>💪 Bouncer Service - Event & Personal</div><div>🔫 Gunman - Licensed Armed</div>
+<div>📹 CCTV Installation & Monitoring</div><div>📚 Industrial Safety Training</div><div>🔥 Fire Fighting Training</div>
+<div>🧯 Mock Drills</div><div>📋 Safety Audits</div>
+</div>
+</div>
 
-  <!-- PPE Products -->
-  <section id="ppe">
-    <div class="container">
-      <div class="section-title">
-        <h2>Certified PPE Equipment</h2>
-        <p>High-grade bulk supplies for factory workers and construction sites.</p>
-      </div>
-      <div class="grid-4">
-        <div class="card">
-          <div class="card-icon">⛑️</div>
-          <h3>Safety Helmets</h3>
-          <p>Impact resistant with adjustable chin strap and sweatband.</p>
-          <span class="tag-standard">IS 2925 Certified</span>
-        </div>
-        <div class="card">
-          <div class="card-icon">👞</div>
-          <h3>Steel Toe Safety Shoes</h3>
-          <p>Anti-skid sole with heavy impact protection for factory floors.</p>
-          <span class="tag-standard">IS 15298 Standard</span>
-        </div>
-        <div class="card">
-          <div class="card-icon">🦺</div>
-          <h3>High-Vis Jackets</h3>
-          <p>High reflective tape for night shift and low-light visibility.</p>
-          <span class="tag-standard">EN 471 Standard</span>
-        </div>
-        <div class="card">
-          <div class="card-icon">🔗</div>
-          <h3>Full Body Harness</h3>
-          <p>Fall protection gear for height work with dual lanyard hooks.</p>
-          <span class="tag-standard">CE / EN 361 Certified</span>
-        </div>
-      </div>
-    </div>
-  </section>
+<div style="margin-top:16px">
+<div class="blue g">PPE PRODUCTS - TEAMWORK SAFETY SOLUTIONS</div>
+<div class="ppe">
+<div>⛑<br>Helmets<br>₹350</div><div>👞<br>Shoes<br>₹1200</div><div>🧤<br>Gloves</div><div>🦺<br>Jackets</div><div>🥽<br>Goggles</div><div>🛡<br>Face Shield</div><div>🎧<br>Ear Protection</div><div>🔗<br>Harness</div>
+</div>
+</div>
 
-  <!-- Instant WhatsApp Quote Section -->
-  <section id="quote">
-    <div class="container">
-      <div class="quote-section">
-        <div class="quote-container">
-          <h2>⚡ Request Bulk Price Quotation</h2>
-          <p>Fill out the details below to receive wholesale pricing directly on WhatsApp within 1 hour.</p>
-          
-          <form id="whatsappForm" onsubmit="sendWhatsAppQuote(event)">
-            <div class="form-group">
-              <label for="companyName">Company / Factory Name *</label>
-              <input type="text" id="companyName" class="form-control" placeholder="e.g. Apex Industries Nagpur" required>
-            </div>
+<div id="quote" class="quote">
+<h3 style="text-align:center;color:#0f2a52">📋 Get Free Quotation - Reply in 1 Hour!</h3>
+<p style="text-align:center;font-size:11px;color:#64748b;margin:6px 0 12px">TEAM WORK GROUP will send best bulk price on WhatsApp</p>
+<form onsubmit="sendQuote(event)">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+<div class="input"><label>Company Name *</label><input id="company" placeholder="ABC Manufacturing" required></div>
+<div class="input"><label>Your Name *</label><input id="person" placeholder="Rajesh Kumar" required></div>
+<div class="input"><label>Mobile *</label><input id="mobile" placeholder="9876543210" required></div>
+<div class="input"><label>Quantity *</label><input id="qty" placeholder="Ex: 50 Helmets" required></div>
+</div>
+<div class="input"><label>Service Needed *</label>
+<div class="check-grid">
+<label class="check"><input type="checkbox" value="Security Guard" class="prod"> 🛡️ Security</label>
+<label class="check"><input type="checkbox" value="Safety Equipment" class="prod"> 🦺 Safety PPE</label>
+<label class="check"><input type="checkbox" value="Events" class="prod"> 🎉 Events</label>
+<label class="check"><input type="checkbox" value="Training" class="prod"> 🔥 Training</label>
+</div>
+</div>
+<div class="input"><label>Message</label><textarea id="msg" rows="2" placeholder="Need urgent delivery..."></textarea></div>
+<div style="text-align:center"><button class="btn" style="width:100%;max-width:340px;padding:13px">📱 Send Request to TEAM WORK GROUP</button></div>
+</form>
+</div>
 
-            <div class="form-group">
-              <label for="requirementType">Primary Requirement *</label>
-              <select id="requirementType" class="form-control" required>
-                <option value="" disabled selected>Select Requirement</option>
-                <option value="PPE Equipment (Helmets/Shoes/Jackets)">PPE Equipment (Helmets/Shoes/Jackets)</option>
-                <option value="Industrial Security Guards">Industrial Security Guards</option>
-                <option value="Fire Safety Drills & Training">Fire Safety Drills & Training</option>
-                <option value="CCTV Installation & Surveillance">CCTV Installation & Surveillance</option>
-                <option value="Other / Multiple Services">Other / Multiple Services</option>
-              </select>
-            </div>
+<div class="card" style="border:2px solid #ff7a00;margin-top:18px" id="brochure">
+<div class="blue o">📋 OFFICIAL BROCHURE - TEAMWORK GROUP</div>
+<img src="brochure.jpg" style="width:100%;border-radius:12px;margin-top:10px" onerror="this.src='brochure.png'">
+<div style="display:flex;gap:8px;justify-content:center;margin-top:12px;flex-wrap:wrap">
+<a href="brochure.jpg" download class="btn">⬇️ Download Brochure</a>
+<a href="https://wa.me/918208119059" class="btn btn-green">💬 WhatsApp</a>
+<a href="tel:8208119059" class="btn btn-blue">📞 Call Owner</a>
+</div>
+</div>
 
-            <div class="form-group">
-              <label for="quantity">Quantity / Scope Description</label>
-              <input type="text" id="quantity" class="form-control" placeholder="e.g. 50 Safety Shoes or 4 Guards 24x7">
-            </div>
-
-            <button type="submit" class="submit-btn">
-              💬 Get Bulk Price on WhatsApp
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section style="background: var(--bg-light);">
-    <div class="container">
-      <div class="section-title">
-        <h2>Contact Office</h2>
-        <p>Visit us or connect directly for tenders and commercial inquiries.</p>
-      </div>
-
-      <div class="contact-grid">
-        <div class="contact-card">
-          <h4>📍 Office Address</h4>
-          <p>41, Jamil Housing Society, Near Arti Town,<br>Godhani Railway Road, Nagpur – 440023</p>
-        </div>
-        <div class="contact-card">
-          <h4>📞 Phone & WhatsApp</h4>
-          <p><a href="tel:+918208119059" style="color:var(--primary); text-decoration:none; font-weight:600;">+91 82081 19059</a></p>
-          <p style="margin-top:0.3rem; font-size:0.9rem; color:var(--text-muted);">Mon – Sat: 9:00 AM – 7:00 PM</p>
-        </div>
-        <div class="contact-card">
-          <h4>✉️ Email Inquiries</h4>
-          <p><a href="mailto:teamworkg2018@gmail.com" style="color:var(--primary); text-decoration:none; font-weight:600;">teamworkg2018@gmail.com</a></p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>© 2024–2026 TEAM WORK GROUP | Nagpur, Maharashtra.</p>
-      <p style="margin-top: 0.4rem; font-size: 0.8rem;">All Rights Reserved. Safety & Industrial Compliance Solutions.</p>
-    </div>
-  </footer>
-
-  <!-- Mobile Floating Sticky Bar -->
-  <div class="mobile-bar">
-    <a href="tel:+918208119059" class="btn-mob-call">📞 Call Now</a>
-    <a href="https://wa.me/918208119059?text=Hi%20Team%20Work%20Group,%20I%20want%20to%20inquire%20about%20your%20services." class="btn-mob-wa">💬 WhatsApp</a>
-  </div>
-
-  <!-- WhatsApp Script -->
-  <script>
-    function sendWhatsAppQuote(event) {
-      event.preventDefault();
-      
-      const company = document.getElementById('companyName').value.trim();
-      const req = document.getElementById('requirementType').value;
-      const details = document.getElementById('quantity').value.trim();
-      
-      const phoneNumber = "918208119059";
-      
-      let message = `*Quotation Request - Team Work Group*%0A`;
-      message += `------------------------------%0A`;
-      message += `*Company/Client:* ${encodeURIComponent(company)}%0A`;
-      message += `*Requirement:* ${encodeURIComponent(req)}%0A`;
-      if(details) {
-        message += `*Scope/Quantity:* ${encodeURIComponent(details)}%0A`;
-      }
-      message += `------------------------------%0A`;
-      message += `Please provide your best bulk rates.`;
-
-      const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
-      window.open(whatsappUrl, '_blank');
-    }
-  </script>
+<div id="contact" class="contact">
+<h2 style="color:#ff9e44;font-size:18px">📍 CONTACT - TEAM WORK GROUP</h2>
+<div style="margin-top:12px;font-size:12px;line-height:1.7">
+<b>👤 Rozar Waghchoure - Founder, TEAM WORK GROUP</b><br>
+41, Jamil Housing Society, Near Arti Town, Godhani Railway Road, Nagpur - 440023<br><br>
+<b>📱 Mobile / WhatsApp:</b> <a href="https://wa.me/918208119059">82081 19059</a><br>
+<b>✉️ Email:</b> <a href="mailto: teamworkg2018@gmail.com">teamworkg2018@gmail.com</a><br>
+</div>
+<div style="margin-top:14px;display:flex;gap:8px;flex-wrap:wrap;justify-content:center">
+<a class="btn" href="https://wa.me/918208119059">💬 WhatsApp</a>
+<a class="btn" style="background:#fff;color:#0f2a52" href="https://maps.google.com/?q=41+Jamil+Housing+Society+Godhani+Road+Nagpur+440023" target="_blank">📍 Get Directions</a>
+</div>
+</div>
+</div>
+<footer>© 2024-26 TEAM WORK GROUP | TEAMWORK Safety Solutions, Nagpur<br>41, Jamil Housing, Godhani Road - 440023 | 82081 19059 | teamworkg2018@gmail.com</footer>
+<script>
+function sendQuote(e){
+ e.preventDefault();
+ const c=document.getElementById('company').value;
+ const p=document.getElementById('person').value;
+ const m=document.getElementById('mobile').value;
+ const q=document.getElementById('qty').value;
+ const ms=document.getElementById('msg').value;
+ const prods=[...document.querySelectorAll('.prod:checked')].map(x=>x.value).join(', ');
+ if(!prods){alert('Please select service');return;}
+ let t=`*TEAM WORK GROUP - NEW ENQUIRY*%0ACompany: ${c}%0APerson: ${p}%0AMobile: ${m}%0AService: ${prods}%0AQty: ${q}%0AMsg: ${ms}`;
+ window.open(`https://wa.me/918208119059?text=${t}`,'_blank');
+ alert('✅ Sent to TEAM WORK GROUP! Reply in 1 hour'); e.target.reset();
+}
+</script>
 </body>
 </html>
