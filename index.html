@@ -1,70 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>TEAM WORK GROUP Nagpur</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TEAM WORK GROUP Nagpur - Safety, Security & Events</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
-body{background:#f5f7fa}
-header{background:#fff;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 10px rgba(0,0,0,.1)}
-.logo{font-weight:900;color:#0f2a52;font-size:18px}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,Arial}
+body{background:#f8fafc;color:#1e293b}
+.top{background:#0f2a52;color:#ffcc00;text-align:center;padding:8px;font-size:11px;font-weight:800}
+header{background:#fff;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 12px rgba(0,0,0,.08);position:sticky;top:0;z-index:9}
+.logo{display:flex;align-items:center;gap:8px;font-weight:900;color:#0f2a52}
+.logo img{height:42px;width:42px;border-radius:8px;object-fit:cover;border:2px solid #ff7a00}
 .logo span{color:#ff7a00}
-.btn{background:#ff7a00;color:#fff;padding:10px 18px;border-radius:25px;text-decoration:none;font-weight:800;font-size:13px;display:inline-block}
-.hero{background:#0f2a52;color:#fff;padding:40px 16px;text-align:center}
-.hero h1{font-size:32px} .hero h1 b{color:#ffcc00}
+.btn{background:#ff7a00;color:#fff;padding:11px 20px;border-radius:30px;text-decoration:none;font-weight:800;font-size:13px;display:inline-block}
+.btn-b{background:#0f2a52} .btn-g{background:#16a34a}
+.hero{background:linear-gradient(100deg,#0f2a52 60%,#1a3f7a);color:#fff;padding:40px 16px;text-align:center}
+.hero h1{font-size:34px;line-height:1.1} .hero h1 b{color:#ffcc00}
 .sec{max-width:1100px;margin:auto;padding:16px}
-.card{background:#fff;border-radius:16px;padding:18px;margin-top:14px;box-shadow:0 4px 16px rgba(0,0,0,.06)}
-.blue{background:#0f2a52;color:#fff;padding:6px 14px;border-radius:20px;font-size:11px;font-weight:800;display:inline-block;margin-bottom:10px}
-img{max-width:100%;border-radius:12px}
+.card{background:#fff;border-radius:18px;padding:18px;box-shadow:0 6px 20px rgba(0,0,0,.06);border:1px solid #eef2f7;margin-bottom:16px}
+.badge{background:#0f2a52;color:#fff;padding:7px 14px;border-radius:20px;font-size:11px;font-weight:800;display:inline-block;margin-bottom:10px}
+.badge.o{background:#ff7a00} .badge.y{background:#ffcc00;color:#000}
+.owner{display:grid;grid-template-columns:130px 1fr;gap:16px;align-items:center;background:linear-gradient(135deg,#0f2a52,#1e4a8a);color:#fff;border-radius:18px;padding:18px}
+.owner img{width:130px;height:150px;object-fit:cover;border-radius:14px;border:3px solid #ffcc00}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.grid4 div{background:#fff;border-left:4px solid #ff7a00;padding:12px;border-radius:10px;font-weight:700;font-size:11px}
+.ppe{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.ppe div{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:12px;text-align:center;font-weight:800;font-size:11px}
+.brochures{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.brochures img{width:100%;border-radius:12px;display:block}
+@media(max-width:700px){.grid4{grid-template-columns:1fr 1fr}.ppe{grid-template-columns:1fr 1fr}.brochures{grid-template-columns:1fr}.owner{grid-template-columns:1fr;text-align:center}.owner img{margin:auto}}
 </style>
 </head>
 <body>
+<div class="top">TEAM WORK GROUP NAGPUR - 13+ YEARS MERCHANT NAVY | SAFETY TODAY, SECURE TOMORROW</div>
 <header>
-<div class="logo">TEAMWORK <span>GROUP</span></div>
+<div class="logo"><img src="logo.png" onerror="this.style.display='none'">TEAMWORK <span>GROUP</span></div>
 <a class="btn" href="https://wa.me/918208119059">82081 19059</a>
 </header>
 
 <div class="hero">
+<p style="color:#ffcc66;font-size:10px;font-weight:800;letter-spacing:1px">SAFETY • SECURITY • EVENTS • TRAINING • NAGPUR</p>
 <h1>TEAM WORK <b>GROUP</b><br>NAGPUR</h1>
-<p style="margin-top:8px">Safety • Security • Events • Training</p>
-<p style="margin-top:6px;font-size:12px;opacity:.8">By Rozar Waghchoure - 13+ Years Merchant Navy</p>
-<br>
-<a class="btn" href="https://wa.me/918208119059">📋 Get Quotation on WhatsApp</a>
+<p style="margin-top:8px;font-weight:700">Your Partner in <span style="color:#ffcc66">Safety, Security & Compliance</span></p>
+<p style="font-size:11px;opacity:.9;margin-top:6px">By Rozar Waghchoure - 13+ Years Merchant Navy | DG Shipping Certified Trainer</p>
+<div style="margin-top:18px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap">
+<a class="btn" href="https://wa.me/918208119059?text=Hi, Need Quotation">📋 Get Quotation</a>
+<a class="btn btn-b" href="#brochures">📄 Brochures</a>
+</div>
 </div>
 
 <div class="sec">
-<div class="card">
-<div class="blue">ABOUT FOUNDER - WITH PHOTO</div>
-<div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap">
-<img src="owner.jpg" style="width:110px;height:130px;object-fit:cover;border:3px solid #ffcc00" onerror="this.src='logo.png'">
+
+<div class="owner">
+<img src="owner.jpg" onerror="this.src='logo.png'">
 <div>
-<h3>Mr. Rozar Waghchoure</h3>
-<p style="font-size:12px;color:#ff7a00;font-weight:700">Founder - 13+ Years Merchant Navy Officer</p>
-<p style="font-size:12px;margin-top:6px">Ex-Safety & Navigation Officer - DG Shipping Certified Trainer. Safety is not an option, it's survival.</p>
+<div class="badge y">FOUNDER & OWNER</div>
+<h2>Mr. Rozar Waghchoure</h2>
+<p style="color:#ffcc66;font-size:11px;font-weight:700">Founder - TEAM WORK GROUP | 13+ Years Merchant Navy Officer</p>
+<p style="font-size:11px;margin-top:8px;line-height:1.6;opacity:.9">Ex-Navigation & Safety Officer - directly in-charge of Fire Fighting & PPE systems onboard. DG Shipping Certified Trainer. "Safety is not an option, it's survival."</p>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap;justify-content:center">
+<a class="btn btn-g" style="font-size:11px" href="https://wa.me/918208119059">💬 Chat Direct</a>
+<a class="btn" style="font-size:11px;background:#fff;color:#0f2a52" href="tel:8208119059">📞 Call</a>
 </div>
 </div>
 </div>
 
-<div class="card">
-<div class="blue" style="background:#ff7a00">📋 NEW BROCHURE 2026</div>
-<img src="brochure-new.jpg" alt="New Brochure" onerror="this.style.display='none';document.getElementById('oldB').style.display='block'">
-<img id="oldB" src="brochure.jpg" alt="Brochure" style="display:none" onerror="this.src='brochure.png'">
-<br><br>
-<div style="text-align:center">
-<a href="brochure-new.jpg" download class="btn" style="background:#0f2a52">⬇️ Download New Brochure</a>
-<a href="brochure.jpg" download class="btn">⬇️ Download Old Brochure</a>
+<div class="card" style="margin-top:16px">
+<div class="badge">OUR CORE SERVICES - 4 COMPANIES IN ONE GROUP</div>
+<div class="grid4" style="margin-top:10px">
+<div>👮 Security Guard<br><span style="font-weight:400;color:#64748b">Factory/Office</span></div>
+<div>💪 Bouncer<br><span style="font-weight:400;color:#64748b">Event/Personal</span></div>
+<div>🔫 Gunman<br><span style="font-weight:400;color:#64748b">Licensed</span></div>
+<div>📹 CCTV<br><span style="font-weight:400;color:#64748b">Installation</span></div>
+<div>🔥 Fire Training<br><span style="font-weight:400;color:#64748b">Live Demo</span></div>
+<div>🧯 Mock Drills<br><span style="font-weight:400;color:#64748b">Factory</span></div>
+<div>📋 Safety Audit<br><span style="font-weight:400;color:#64748b">Compliance</span></div>
+<div>🎉 Events<br><span style="font-weight:400;color:#64748b">Promotion</span></div>
 </div>
 </div>
 
 <div class="card">
-<div class="blue">CONTACT</div>
-<p style="font-size:13px;line-height:1.8">
-📍 41, Jamil Housing, Godhani Road, Nagpur - 440023<br>
-📱 <a href="https://wa.me/918208119059" style="color:#ff7a00;font-weight:800">82081 19059</a><br>
-✉️ teamworkg2018@gmail.com
-</p>
-</div>
-</div>
-</body>
-</html>
+<div class="badge" style="background:#16a34a">PPE PRODUCTS - BULK PRICE</div>
+<div class="ppe" style="margin-top:10px">
+<div>⛑ Helmets<br><span style="color:#
